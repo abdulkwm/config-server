@@ -11,5 +11,20 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8766/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - info
+          - metrics
+          - health
+        exclude:
+          - beans
+  tracing:
+    sampling:
+      probability: 1.0
+      
 abdu:
   yml: hello world from yaml file
