@@ -10,6 +10,6 @@ springdoc:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8762/eureka/
+      defaultZone: http://localhost:8766/eureka/
 abdu:
   yml: my yml config prop
